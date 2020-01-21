@@ -25,7 +25,7 @@ class CashRegister
 
   end
 
-  def apply_discount
+  def apply_discount()
   if @discount > 0
     @discount = @discount/100.to_f
     @total = @total - (@total * (@discount))
@@ -35,8 +35,8 @@ class CashRegister
   end
 end
 
-def void_last_transaction
-   @total = @last_transaction_amount
+def void_last_transaction()
+   @total -= @last_transaction_amount
 end
 
 end
