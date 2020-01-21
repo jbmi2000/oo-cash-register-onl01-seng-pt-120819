@@ -13,7 +13,7 @@ class CashRegister
     quantity.times do
       items << title
     end
-    self.last_transaction = price * quantity
+    self.last_transaction_amount = price * quantity
     # if quantity > 1
     #       i = 0
     #       while i < quantity
@@ -22,11 +22,11 @@ class CashRegister
     #       end
     #     else
     #       @items << title
-  end
+  #end
 
-        @total += price*quantity
-        @last_transaction_amount = @total
-        @total
+        # @total += price*quantity
+        # @last_transaction_amount = @total
+        # @total
 
   end
 
