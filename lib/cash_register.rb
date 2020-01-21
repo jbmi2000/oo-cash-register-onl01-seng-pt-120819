@@ -21,7 +21,7 @@ class CashRegister
 
         @total += price*quantity
         @last_transaction_amount = @total
-        @total = @last_transaction_amount
+        @total
 
   end
 
